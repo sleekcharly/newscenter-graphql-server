@@ -1,0 +1,44 @@
+{
+    "name": "newscenter-graphql",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node server.js",
+        "test": "jest --coverage"
+    },
+    "author": "Charles Ukasoanya",
+    "license": "ISC",
+    "jest": {
+        "coverageThreshold": {
+            "global": {
+                "branches": 95,
+                "functions": 95,
+                "lines": 95,
+                "statements": 95
+            }
+        },
+        "coverageReporters": [
+            "html",
+            "text"
+        ]
+    },
+    "dependencies": {
+        "apollo-datasource-rest": "^0.6.9",
+        "apollo-server": "^2.14.2",
+        "express": "4.17.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.7.4",
+        "@babel/core": "^7.7.4",
+        "@babel/node": "^7.7.4",
+        "@babel/plugin-proposal-optional-chaining": "^7.7.4",
+        "@babel/preset-env": "^7.7.4",
+        "apollo-server-testing": "^2.9.12",
+        "jest": "^24.9.0",
+        "nodemon": "^2.0.1",
+        "graphql": "^14.2.1",
+        "bufferutil": "^4.0.1",
+        "utf-8-validate": "^5.0.2"
+    }
+}
